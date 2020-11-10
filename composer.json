@@ -1,0 +1,24 @@
+{
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": "^7.4",
+        "psr/cache": "*",
+        "guzzlehttp/guzzle": "^7.2",
+        "aviat/banker": "^3.1"
+    },
+    "require-dev": {
+        "ext-json": "*",
+        "friendsofphp/php-cs-fixer": "*",
+        "squizlabs/php_codesniffer": "*",
+        "escapestudios/symfony2-coding-standard": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\":"src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+composer -n -q dump-autoload -o >> /dev/null
+
+bin/php-cs-fixer fix .php_cs.dist >> /dev/null
+bin/php-cs-fixer fix src
+bin/php-cs-fixer fix index.php
+
+bin/phpcs --config-set installed_paths vendor/escapestudios/symfony2-coding-standard >> /dev/null
+bin/phpcs index.php
+bin/phpcs --colors --standard=Symfony src | more

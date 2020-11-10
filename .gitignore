@@ -1,0 +1,10 @@
+/.idea/
+/nbproject/
+
+/vendor/
+
+/.phpcs-cache
+/phpcs.xml
+
+/.php_cs
+/.php_cs.cache
